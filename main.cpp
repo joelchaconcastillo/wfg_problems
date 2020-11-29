@@ -14,7 +14,8 @@ int main()
    {
       for(int i = 0; i < nvar; i++) x_var[i] = (rand()/(double)RAND_MAX)*2.0*(i+1.0);
       int k=4; //position variables
-       y_obj = Problems::WFG6( x_var, k, nobj);
+       y_obj = Problems::WFG2( x_var, k, nobj);
+       //y_obj = Problems::WFG8( x_var, k, nobj);
       for(auto obj:y_obj) cout << obj <<" ";
       cout <<endl;
    }
